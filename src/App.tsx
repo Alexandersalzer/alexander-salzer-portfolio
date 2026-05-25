@@ -46,10 +46,9 @@ const PROJECTS = [
     id: 6,
     title: 'Design System',
     sub: 'UI · Komponenter · Blimpify',
-    href: null,
+    href: 'https://alsa-design-system.vercel.app',
     img: '/docs.png',
-    label: 'Privat',
-    private: true,
+    label: 'alsa-design-system.vercel.app',
     colSpan: 2,
   },
   {
@@ -101,6 +100,9 @@ export default function App() {
       {/* NAV */}
       <nav className="nav">
         <div className="nav-links">
+          <a href="https://alsa-design-system.vercel.app" className="nav-link" target="_blank" rel="noreferrer">
+            Design System
+          </a>
           {SOCIALS.map(s => (
             <a key={s.label} href={s.href} className="nav-link" target="_blank" rel="noreferrer">
               {s.label}
@@ -151,13 +153,12 @@ export default function App() {
             const Tag = p.href ? 'a' : 'div'
             const linkProps = p.href ? { href: p.href, target: '_blank', rel: 'noreferrer' } : {}
             return (
-              <Tag key={p.id} {...linkProps} className={`project-item${p.private ? ' project-item--private' : ''}`} style={{ gridColumn: `span ${p.colSpan}` }}>
+              <Tag key={p.id} {...linkProps} className="project-item" style={{ gridColumn: `span ${p.colSpan}` }}>
                 <div className="project-thumb">
                   {p.img
                     ? <img src={p.img} alt={p.title} />
                     : <span className="project-thumb-label">{p.label}</span>
                   }
-                  {p.private && <span className="project-private-badge">Privat</span>}
                 </div>
                 <p className="project-title">{p.title}</p>
                 <p className="project-sub">{p.sub}</p>
