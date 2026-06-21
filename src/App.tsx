@@ -66,7 +66,6 @@ const SOCIALS = [
   { label: 'Instagram', href: 'https://www.instagram.com/alexander.salzer/' },
   { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/alexander-salzer-382030331/' },
   { label: 'GitHub',    href: 'https://github.com/Alexandersalzer' },
-  { label: 'Mail',      href: 'mailto:alex.salzer04@gmail.com' },
 ]
 
 const SPOTIFY_ID = '3AQIKAMgNw6ZkoUm6j7sDa'
