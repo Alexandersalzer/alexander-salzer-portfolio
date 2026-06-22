@@ -10,9 +10,9 @@ const PROJECTS = [
     id: 1,
     title: 'Blimpify',
     sub: 'Produkt · Webb',
-    href: 'https://blimpify-im.com',
+    href: 'https://blimpify.co',
     img: '/blimpify.jpg',
-    label: 'blimpify-im.com',
+    label: 'blimpify.co',
     colSpan: 2,
   },
   {
@@ -189,6 +189,9 @@ export default function App() {
       {/* SPOTIFY */}
       <section className="song-section">
         <p className="section-label">Lyssnar på</p>
+        <div className="song-photo">
+          <img src="/curdin.jpg" alt="Curdin" />
+        </div>
         <div className="spotify-wrap">
           <iframe
             src={`https://open.spotify.com/embed/playlist/${SPOTIFY_ID}?utm_source=generator&theme=0`}
