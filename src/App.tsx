@@ -207,6 +207,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="footer">
         <span>© 2026 Alexander Salzer</span>
+        <a className="footer-mail" href="mailto:alex.salzer04@gmail.com">alex.salzer04@gmail.com</a>
       </footer>
 
     </div>
